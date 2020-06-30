@@ -41,7 +41,9 @@ The fundamental object in the study of homological algebra is that of a _sequenc
 |`barcode_decompose` | Y |  | | Y | 
 |`barcode_reader` | Y | | | Y | 
 |`chain_complex_unittest` | Y  | Y | Y | Y | 
-|`barcode_reader_unittest` | Y  | Y | Y | Y | 
+|`barcode_reader_unittest` | Y  | Y | Y | Y |
+|`dualize_sequence` |   |  |  |  |
+|`laplacian` |   |  |  |  |
 
 The two `_unittest` files are scripts meant to be run from the Octave command line.  They run an end-to-end analysis, first generating a random sequence by way of specifying its barcode, constructing the sequence from that, and then decomposing the sequence.  It should be the case that the decomposition recovers the barcode, and the `_unittest` scripts verify that.
 
@@ -106,3 +108,4 @@ Typesetting large commutative ladders labeled with matrices is usually a time-co
 |`render_sequence` | Y  | Y |
 |`render_sequence_map` | Y  | Y |
 
+> Note that the `render_matrix` function rounds entries to make them render nicely.  Sometimes entries will show up as `-0`, which may be a bit mystifying but are easy enough to remove if you don't want them.
