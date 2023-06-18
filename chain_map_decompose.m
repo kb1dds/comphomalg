@@ -43,6 +43,10 @@ mats1p=mats1;
 mats2p=mats2;
 compsp=comps;
 
+% Initialze output
+starts=[];
+types=[];
+
 % Decompose everything in the domain (which might lead into the codomain)
 while(1),
   % Is there anything to decompose in the domain?
